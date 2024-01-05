@@ -17,11 +17,13 @@ export const getChainConfig = (chain: Chain): TChainConfig => {
 };
 
 export const getTxUrl = (chain: Chain, txHash: string) => {
-  return `${getChainConfig(chain).explorer}tx/${txHash}`;
+  const explorer = getChainConfig(chain).explorer;
+
+  return explorer ? `${explorer}/tx/${txHash}` : "";
 };
 
 export const getAddressUrl = (chain: Chain, address: string) => {
   const explorer = getChainConfig(chain).explorer;
 
-  return explorer ? `${explorer}address/${address}` : "";
+  return explorer ? `${explorer}/address/${address}` : "";
 };

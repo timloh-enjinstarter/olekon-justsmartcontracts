@@ -31,4 +31,5 @@ export enum Chain {
   ARBITRUM_SEPOLIA = 421614,
   BSC_TESTNET = 97,
   COREDAO = 1116,
+  COREDAO_TESTNET = 1115,
 }

@@ -42,6 +42,7 @@ export const SupportedChains = [
   Chain.ARBITRUM_SEPOLIA,
   Chain.BSC_TESTNET,
   Chain.COREDAO,
+  Chain.COREDAO_TESTNET,
 ];
 
 const useCurrentChainStore = create<State & Actions>()(

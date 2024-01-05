@@ -32,6 +32,7 @@ import {
 } from "viem/chains";
 
 import { Chain } from "./chains";
+import { coreDaoTestnet } from "./chaiin-definitions/coreDaoTestnet";
 
 const ChainWagmiMap: Record<Chain, WagmiChain> = {
   [Chain.ARBITRUM]: arbitrum,
@@ -65,6 +66,7 @@ const ChainWagmiMap: Record<Chain, WagmiChain> = {
   [Chain.ARBITRUM_SEPOLIA]: arbitrumSepolia,
   [Chain.BSC_TESTNET]: bscTestnet,
   [Chain.COREDAO]: coreDao,
+  [Chain.COREDAO_TESTNET]: coreDaoTestnet,
 };
 
 export const toWagmiChain = (chain: Chain) => ChainWagmiMap[chain];

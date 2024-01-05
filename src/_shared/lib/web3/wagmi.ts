@@ -26,6 +26,9 @@ import {
   okc,
   moonriver,
   boba,
+  arbitrumSepolia,
+  bscTestnet,
+  coreDao,
 } from "viem/chains";
 
 import { Chain } from "./chains";
@@ -59,6 +62,9 @@ const ChainWagmiMap: Record<Chain, WagmiChain> = {
   [Chain.OKXCHAIN]: okc,
   [Chain.MOONRIVER]: moonriver,
   [Chain.BOBA]: boba,
+  [Chain.ARBITRUM_SEPOLIA]: arbitrumSepolia,
+  [Chain.BSC_TESTNET]: bscTestnet,
+  [Chain.COREDAO]: coreDao,
 };
 
 export const toWagmiChain = (chain: Chain) => ChainWagmiMap[chain];

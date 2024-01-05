@@ -39,6 +39,9 @@ export const SupportedChains = [
   Chain.OKXCHAIN,
   Chain.MOONRIVER,
   Chain.BOBA,
+  Chain.ARBITRUM_SEPOLIA,
+  Chain.BSC_TESTNET,
+  Chain.COREDAO,
 ];
 
 const useCurrentChainStore = create<State & Actions>()(

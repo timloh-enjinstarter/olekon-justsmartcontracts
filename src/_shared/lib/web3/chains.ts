@@ -28,4 +28,7 @@ export enum Chain {
   OKXCHAIN = 66,
   MOONRIVER = 1285,
   BOBA = 288,
+  ARBITRUM_SEPOLIA = 421614,
+  BSC_TESTNET = 97,
+  COREDAO = 1116,
 }

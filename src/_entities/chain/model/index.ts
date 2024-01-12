@@ -43,6 +43,7 @@ export const SupportedChains = [
   Chain.BSC_TESTNET,
   Chain.COREDAO,
   Chain.COREDAO_TESTNET,
+  Chain.MANTA_TESTNET,
 ];
 
 const useCurrentChainStore = create<State & Actions>()(

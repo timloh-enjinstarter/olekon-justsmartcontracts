@@ -29,6 +29,7 @@ import {
   arbitrumSepolia,
   bscTestnet,
   coreDao,
+  mantaTestnet,
 } from "viem/chains";
 
 import { Chain } from "./chains";
@@ -67,6 +68,7 @@ const ChainWagmiMap: Record<Chain, WagmiChain> = {
   [Chain.BSC_TESTNET]: bscTestnet,
   [Chain.COREDAO]: coreDao,
   [Chain.COREDAO_TESTNET]: coreDaoTestnet,
+  [Chain.MANTA_TESTNET]: mantaTestnet,
 };
 
 export const toWagmiChain = (chain: Chain) => ChainWagmiMap[chain];

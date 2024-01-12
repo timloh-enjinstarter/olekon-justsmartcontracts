@@ -32,4 +32,5 @@ export enum Chain {
   BSC_TESTNET = 97,
   COREDAO = 1116,
   COREDAO_TESTNET = 1115,
+  MANTA_TESTNET = 3441005,
 }
